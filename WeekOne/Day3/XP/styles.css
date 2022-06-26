@@ -1,0 +1,29 @@
+/*property
+{
+transition-property: value;
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+    nav {
+        border: 2px solid black;
+        position: relative;
+    }
+.productlink {
+    position: absolute;
+    right: 5%;
+    top:  50%;
+}
+
+.products
+{
+border: 2px solid blue;
+}
+
+.products div
+{
+
+
+}

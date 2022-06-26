@@ -1,0 +1,229 @@
+/*
+/*GENERAL CSS*/
+
+div {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: blue;
+}
+
+.three{
+    background-color: red;
+}
+
+.four{
+    background-color: blue;
+}
+
+.five{
+    background-color: red;
+}
+
+.six{
+    background-color: blue;
+}
+.black {
+    background-color: black;
+    color: white;
+}
+/* -------------------- */
+
+/*on the parent*/
+.avigrid{
+    border: 1px solid black;
+    background-color: gainsboro;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 2rem;
+    padding: 2rem;
+
+
+/*    background-color:gainsboro;
+    display: grid;
+    grid-template-rows: 1fr 2fr ;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 3rem;*/
+}
+
+.one {
+    /* grid-column : in which column is starts/how many columns it takes */
+   /* grid-column: 1/span 2;*/
+}
+
+.two {
+
+    grid-column: 2/ span 2;
+    grid-gap: 2rem 2rem;
+ 
+}
+
+.three {
+    
+
+}
+
+.four{
+    grid-column: 2/ span 2;
+}
+
+.five{
+
+}
+
+.six{
+
+grid-column: 2/ span 2;
+
+}
+.black
+{
+grid-column: 1/ span 3;
+
+}
+
+
+.exerisetwo {
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+    grid-template-rows:repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem 0.5rem;
+    width: 1000px;
+    height: 1000px;
+    padding: 10px;
+    font-size: 2.5erm;
+    text-align: center;
+}
+
+.one1 {
+    background-color: skyblue;
+    grid-column: 1 / span 3;
+}
+.two2{
+  grid-row: 2 / span 2;
+  background-color: purple;
+}
+.three3{
+     background-color: yellow;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 3;
+  
+}
+.four4{
+     background-color: lightgreen;
+     grid-row: 4 / span 3;
+}
+.five5{
+     background-color: gray;
+     grid-column: 2 / span 2;
+     grid-row: 5 / span 2;
+ }
+
+.six6{
+     background-color: green;
+     grid-column: 1 / span 2;
+     grid-row: 7 / span 2 ;
+}
+.blackone{
+     background-color: pink;
+     grid-column: 3 / span 1;
+     grid-row: 7 / span 2;
+}
+.blacktwo{
+     background-color: orange;
+     grid-column: 1 / span 3 ;
+     grid-row: 9 / span 2;
+}
+
+
+.exerisethree
+{
+    color: white;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem 0.5rem ;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    font-size: 2em;
+    text-align:center;
+
+}
+
+
+.redone {
+    background-color: #B43863;
+    grid-column: 1 / span 3;
+    color: white;
+}
+
+.purpletwo{
+    background-color: #8E64D3;
+    grid-row: 2 / span 2;
+    color: white;
+}
+
+.purplethree{
+    background-color: #24A9B6;
+    color: white;
+}
+
+.blueskyfour{
+    background-color: skyblue;
+    color: white;
+}
+.purplefive{
+    background-color: #CF7CEE;
+    grid-column: 2 / span 2;
+    color: white;
+}
+
+.redsix{
+    background-color: #B43863;
+    grid-column: 1 / span 2;
+    color: white;
+}
+
+.purpleseven{
+    background-color: #8E64D3;
+    color: white;
+}
+
+.purpleeight{
+    background-color: #24A9B6;
+    grid-column: 1 / span 3;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+
+/*GENERAL CSS*/
+
+.sectionflexbox {
+    border: 3px solid black; 
+    height: 300px;
+    /*important properties on the parent container*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+div {
+    text-align: center;
+    color: black;
+    font-size: 4em;
+    flex-basis: 100px;
+}
+
+.greenbox {
+    background-color: #A4E6A4;
+    align-self: flex-start;
+    
+}
+
+.purplebox {
+    background-color: #CEAAF0;
+    align-items: flex-start
+}
+
+.pinkbox{
+    background-color: #F288D5;
+
+}
+
+.bluebox{
+    background-color: #438EEA;
+}
+
+.yellowbox{
+    background-color: #F4ED79;
+}
+
+.redbox{
+    background-color: #F8394F;
+}
+
+/*-----------------------------*/
+
+.blockone
+{
+
+    border: 3px solid black; 
+    height: 300px;
+    /*important properties on the parent container*/
+    display:flex;
+    flex-direction: column;
+    justify-items: space-around;
+  /*  align-items: center;*/
+/*    flex-wrap: wrap;*/
+}
+
+.One
+{
+    background-color: skyblue;
+    justify-self: space-between;
+   /* align-self: side;*/
+ /*   flex: 1;*/
+}
+
+.Two
+{
+    background-color: orange;
+    align-self: center;
+
+  
+}
+.There
+{
+    background-color: skyblue;
+  /*  align-self: flex-end;*/
+
+}

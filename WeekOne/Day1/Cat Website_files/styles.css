@@ -1,0 +1,14 @@
+span {
+	background-color: yellow;
+}
+
+div.difference {
+    color: red;
+    display: inline;
+    border:  2px solid red;
+    position: relative;
+    top: 0%;
+    right: -45%;
+
+}
+
