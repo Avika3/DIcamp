@@ -1,101 +1,40 @@
-let addressNumber = 22
-let addressStreet = "Histadrot 6"
-let country = "Israel"
+// Instructions
+// Create a variable called sentence. The value of the variable should be a string that contains the words “not” and “bad”.
+// For example, “The movie is not that bad, I like it”.
 
+// Create a variable called wordNot where it’s value is the first appearance (ie. the position) of the substring “not” 
+// (from the sentence variable).
 
- let globalTemplate = `Avi Kassa adress is ${addressNumber} ${addressStreet} ${country}`
+// Create a variable called wordBad where it’s value is the first appearance (ie. the position) of the substring “bad” 
+// (from the sentence variable).
 
- console.log (globalTemplate);
+// If the word “bad” comes after the word “not”, you should replace the whole “not…bad” substring with “good”, 
+// then console.log the result.
+// For example, the result here should be : “The movie is good, I like it”
+// If the word “bad” does not come after “not” or the words are not in the sentence, 
+// console.log the original sentence.
+// Example:
 
+//   Your string is : 'This dinner is not that bad ! You cook well', 
+//   --> the result is : 'This dinner is good ! You cook well'
 
- let bDay = 21 
- let bMonth = 2 
- let bYaer = 2023
+//   Your string is : 'This movie is not so bad !' 
+//   --> the result is : 'This movie is good !'
 
+//   Your string is : 'This dinner is bad !' 
+//   --> the result is : 'This dinner is bad !'
 
- let birthDay = `On date ${bDay}/${bMonth}/${bYaer}, I will be on 32`
 
- console.log (birthDay);
 
+let sentence = "The movie is not that bad, I like it"
 
-// Exericse 
+let wordNot = sentence.indexOf("not"); //Print the not position 
+let wordBad = sentence.indexOf("bad"); //Print the bad position 
 
-const birthYear =  1990;
-let futureYear = 2025; 
-let futureAge = birthYear - futureYear;
+if (wordBad > wordNot){
+  console.log (sentence.substring(0,wordNot) + " good" + sentence.substring(wordBad+3));
 
-console.log(futureAge);
 
-
-
-// Arry section
-
-let pets = ["Dog", "Lion", "Simba"];
-let firstanimal = pets[2];
-
-
-// index is very important
-
-console.log(firstanimal);
-
-
-// Check it Again
-
-let nameChild = ["Avi", "Kassa", "Dani", "Yosef", "David"];
-
-nameChild [2] = "Rachel";
-
-console.log(nameChild);
-
-
-
-
-// 
-
-let broderNames = ["Avi", "Racheli", "Addis", "Sara", "Degu", "Shira"]; 
-
-broderNames.splice (4,1, "Daddy")
-console.log (broderNames);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}else {
+  console.log (sentence);
+}
