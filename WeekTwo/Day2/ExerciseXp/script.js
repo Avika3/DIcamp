@@ -97,16 +97,16 @@ switch(users.length)
 	break;
 
 	case 3:
-	console.log(${users[0]} ${users[1]} ${users.length} are online`);
+	console.log(`${users[0]} ${users[1]} ${users.length-2} are online`);
 	break;
 	
 
 	case 4:
-	console.log(`${users[0]} ${users[1]} ${users.length} are online`);
+	console.log(`${users[0]} ${users[1]} ${users.length-2} are online`);
 	break;
 	
 	case 5:
-	console.log(`${users[0]} ${users[1]} ${users.length} are online`);
+	console.log(`${users[0]} ${users[1]} ${users.length -2} are online`);
 	break;
 	
 }
