@@ -1,0 +1,9 @@
+.disappear{
+	display: none;
+}
+
+div {
+	background-color: pink;
+	font-size: 40px;
+	padding: 30px;
+}
