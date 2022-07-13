@@ -47,9 +47,9 @@ addNumbersSecond()
 // // EXERCISES IN CLASS
 
 const students = [
-	{name: 'Rich', score: 33}, 
-	{name: 'Peter', score: 55},
-	{name: 'John', score: 75}
+{name: 'Rich', score: 33}, 
+{name: 'Peter', score: 55},
+{name: 'John', score: 75}
 ];
 
 // create a new array, 
