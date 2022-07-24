@@ -71,126 +71,126 @@
 // // // --- Anonymous arrow function
 // // // --------------------
 
-// //anonymous
-// // function (a) {
-// // 	return a + 100;
-// // }
+//anonymous
+// function (a) {
+// 	return a + 100;
+// }
 
-// // // // The same as
-// // (a) => {
-// //   return a + 100;
-// // }
+// // // The same as
+// (a) => {
+//   return a + 100;
+// }
 
-// // // in 1 line, the arrow function returns the value
-// // (a) => a + 100;
+// // in 1 line, the arrow function returns the value
+// (a) => a + 100;
 
-// // a => a + 100;
+// a => a + 100;
 
 // // // // --------------------
 // // // // --- ES6 arrow functions
 // // // // ---------
 
-// // //function declation 
-// squareOne(2);
+// //function declation 
+squareOne(2);
 
-// // function declaration
-// function squareOne (x){
-// 	return x * x;
-// }
+// function declaration
+function squareOne (x){
+	return x * x;
+}
 
-// //function expression
-// const squareOne = function (x) {
-// 	return x * x;
-// }
+//function expression
+const squareOne = function (x) {
+	return x * x;
+}
 
-// //arrow function
-// const squareOne = (x) => x*x
-// let result = squareOne(2);
-// console.log(result)
+//arrow function
+const squareOne = (x) => x*x
+let result = squareOne(2);
+console.log(result)
 
-// // with different number of parameters
-// const squareA = (x) => x*x;
-// const squareB = x => x*x;
-// // more than 1 parameter
-// const squareC = (x,y) => x*y;
-// // no parameters
-// const squareD = () => "hello";
+// with different number of parameters
+const squareA = (x) => x*x;
+const squareB = x => x*x;
+// more than 1 parameter
+const squareC = (x,y) => x*y;
+// no parameters
+const squareD = () => "hello";
 
-// btn.addEventListener("click", 
-// 	function () {
-// 		alert("hello")
-// 	}
-// )
+btn.addEventListener("click", 
+	function () {
+		alert("hello")
+	}
+)
 
 // //same as
-// btn.addEventListener("click", () => alert("hello"))
+btn.addEventListener("click", () => alert("hello"))
 
-// //If the function has more than 1 line, we need square brackets and return
-// const squareOne = (x) => {
-// 	x = x + 2
-// 	return x*x
-// }
-
-
-
-// function welcome (username){
-// 	alert (`Hello ${username}`)
-// }
-// welcome("Avi");
+//If the function has more than 1 line, we need square brackets and return
+const squareOne = (x) => {
+	x = x + 2
+	return x*x
+}
 
 
-// const WelcomeTwo = function (username)
-// 	alert()
+
+function welcome (username){
+	alert (`Hello ${username}`)
+}
+welcome("Avi");
+
+
+const WelcomeTwo = function (username)
+	alert()
 
 
 
 	// // // --- TERNARY OPERATOR
 
-// 	function getTemp (temp) {
-// 		if (temp > 20) {
-// 			return "Summer";
-// 		} else {
-// 			return "Winter";
-// 		}
-// 	}
+	function getTemp (temp) {
+		if (temp > 20) {
+			return "Summer";
+		} else {
+			return "Winter";
+		}
+	}
 
-// 	getTemp(24)
+	getTemp(24)
 
-// // expression ? if the expression is true : if the expression is not true
-// function getTempTwo (temp) {
-// 	let season = temp > 20 ? "Summer" : "Winter";
-// 	return season;
-// }
+// expression ? if the expression is true : if the expression is not true
+function getTempTwo (temp) {
+	let season = temp > 20 ? "Summer" : "Winter";
+	return season;
+}
 
-// getTempTwo(24)
+getTempTwo(24)
 
-// const getTempThree = (temp) => temp > 20 ? "Summer" : "Winter";
-// getTempThree(24)
+const getTempThree = (temp) => temp > 20 ? "Summer" : "Winter";
+getTempThree(24)
 
 
 /// Execsrise 2 
-// let age = prompt("What you age?");
+let age = prompt("What you age?");
 
-// function allowToDrive (){
-// 	if (age >= 18){
-// 		return "You can drive";
-// 	} else {
-// 		return "You can't drive";
-// 	}
-// }
+function allowToDrive (){
+	if (age >= 18){
+		return "You can drive";
+	} else {
+		return "You can't drive";
+	}
+}
 
-// console.log(`Hi User, ${allowToDrive()}`);
+console.log(`Hi User, ${allowToDrive()}`);
 
 // Function exepression >> STOP >>>
 
-// let age = prompt("What you age?");
+let age = prompt("What you age?");
 
-// const getAllow = function (age) { 
-// 	return age > 18 ? "You can drive":"You can't drive";
+const getAllow = function (age) { 
+	return age > 18 ? "You can drive":"You can't drive";
 
-// }
+}
 
-// console.log(`Hi User ${getAllow()}`);
+console.log(`Hi User ${getAllow()}`);
 
 
 // Function exepression >> STOP >>>
@@ -211,7 +211,44 @@ console.log(allowToDrive())
 
 
 
-
+const gameInfo = [
+{
+	username: "john",
+	team: "red",
+	score: 5,
+	items: ["ball", "book", "pen"]
+},
+{
+	username: "becky",
+	team: "blue",
+	score: 10,
+	items: ["tape", "backpack", "pen"]
+},
+{
+	username: "susy",
+	team: "red",
+	score: 55,
+	items: ["ball", "eraser", "pen"]
+},
+{
+	username: "tyson",
+	team: "green",
+	score: 1,
+	items: ["book", "pen"]
+},
+];
+//1
+let usernameStudents = [];
+gameInfo.forEach((value) => { usernameStudents.push(`!${value["username"]}`)});
+console.log(usernameStudents)
+//2
+let usernameScoreStudents = [];
+gameInfo.forEach((value) => { value["score"] > 5 ? usernameScoreStudents.push(value["username"]) : null });
+console.log(usernameScoreStudents)
+// 3
+let score = 0;
+gameInfo.forEach((value) => {score = score + value["score"]});
+console.log(score);
 
 
 

@@ -1,0 +1,17 @@
+
+-- insert into items (First_Name, Last_Name)
+-- values ('Greg','Jones'),('Sandra','Jones'),('Scott','Scott'),('Trevor','Green'),('Melanie','Johnson');
+
+select * from customers;
+select * from items;
+
+select * from items where price > 80;
+
+select * from items where price < 300;
+
+select * from customers where last_Name = 'Smith';
+select * from customers where last_Name = 'Jones';
+select * from customers where first_Name != 'Scott';
+
+select * from customers;
+
