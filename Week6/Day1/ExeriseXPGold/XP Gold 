@@ -1,0 +1,38 @@
+
+-- select * from students ;
+
+-- select first_name, last_name from students ;
+
+-- select first_name, last_name from students where person_id = 2;
+
+
+-- select first_name, last_name from students where last_name = 'Benichou' and first_name = 'Marc';
+
+
+-- select first_name, last_name from students where last_name = 'Benichou' or first_name = 'Marc';
+
+-- select first_name, last_name from students where first_name like '%a%';
+
+-- select first_name, last_name from students where first_name like upper('a%');
+
+-- select first_name, last_name from students where first_name like '%a';
+
+-- select first_name, last_name from students where first_name like '%__a%';
+
+-- select first_name, last_name from students where person_id > 3;
+
+
+
+-- select * from students where birth_date > '1/01/2000';
+
+
+
+--XP GOLD EXERCISE 
+
+select * from students 
+order by last_name 
+desc limit 4
+
+select * from students where birth_date > '2000-01-01'
+
+select * from students where person_id > 3
