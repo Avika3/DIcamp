@@ -1,0 +1,9 @@
+.container {
+	border: 2px solid black;
+	display: flex;
+}
+.imageOne {
+	border: 2px solid black;
+	display: flex;
+	grid-template-rows: 2/3 span;
+}
