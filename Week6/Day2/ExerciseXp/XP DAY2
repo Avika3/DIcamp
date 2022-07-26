@@ -1,0 +1,53 @@
+create table new_film (
+	id integer () 
+	name varchar(50)
+);
+
+
+
+select * from customer ;
+select (first_name ,  last_name) as full_Name from customer ;
+
+select create_date from customer group by create_date; 
+
+select * from customer order by first_name desc
+
+select * from film
+
+select  film_id, title, description, release_year,rental_rate from film order by rental_rate desc
+
+select * from address
+
+select phone, address from address where district = 'Texas'
+
+
+select * from film where film_id between 15 and 150 
+
+
+select film_id, title, description, length, rental_rate from film order by rental_rate desc
+
+select film_id, title, description, length, rental_rate from film where title like 'Ad%' order by rental_rate desc
+
+
+select * from film  order by replacement_cost ASC limit 10
+
+
+
+select * from customer  order by replacement_cost ASC 
+fetch first 20 ROWS ONLY
+
+
+select amount, payment_date
+from customer 
+inner join payment 
+on customer.customer_id = payment.customer_id 
+order by customer.customer_id desc 
+
+
+select * from inventory
+
+select *
+from film 
+inner join inventory
+on inventory.film_id = film.film_id 
+
