@@ -1,8 +1,17 @@
-const express = require("express");
-const app = express();
-app.get("/", (req, res) => {
-  res.send(`<h1>This is an HTML tag</h1>`);
+const http = require('http'); 
+const HTMLEX = '<h1>This is an HTML tag</h1>';
+
+//let sentences = [serverOne,serverTwo,serverThree];
+
+const server = http.createServer((req, res) => {
+
+  res.setHeader(`content-Type`, `text/html`)
+  
+  res.write(HTMLEX)
+
+  res.end()
+
+
 });
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
-});
+//console.log('NEW PORT: Node.js web server at port 3000 is running..'))
+server.listen(3000);
